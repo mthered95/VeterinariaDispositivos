@@ -29,4 +29,18 @@
     <string name="title_delete_account">Eliminar cuenta</string>
     <string name="subtitle_delete_account">Por motivos de seguridad para eliminar tu cuenta por completo, debes de ingresar tu contraseña.</string>
     <string name="delete">Eliminar</string>
+
+
+
+    <string name="name2">Productos</string>
+    <string name="title_activity_main">Productos</string>
+    <string name="title_activity_add">Nuevo producto</string>
+    <string name="title_activity_edit">Datos del producto</string>
+    <string name="name_form">Nombre</string>
+    <string name="date_form">Categoría</string>
+    <string name="url_form">Url imagen</string>
+    <string name="description_form">Descripción</string>
+    <string name="save">Guardar</string>
+    <string name="description">Desarrollada por el grupo Dispositivos mobiles</string>
+
 </resources>
