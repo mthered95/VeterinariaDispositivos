@@ -14,16 +14,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat"
         tools:targetApi="31">
-<!--        <activity android:name=".DeleteAccountActivity"/>-->
-<!--        <activity android:name=".UpdatePasswordActivity"/>-->
-<!--        <activity android:name=".CheckEmailActivity" />-->
-<!--        <activity android:name=".AccountRecoveryActivity"/>-->
-<!--        <activity android:name=".MainActivity" android:theme="@style/Theme.Main"/>-->
-<!--        <activity android:name=".SignUpActivity"/>-->
-<!--        <activity android:name=".SignInActivity"/>-->
-<!--            android:exported="true"/>-->
 
-        <activity android:name=".EditActivity"
+
+        <activity android:name=".DeleteAccountActivity"/>
+        <activity android:name=".UpdatePasswordActivity"/>
+        <activity android:name=".CheckEmailActivity" />
+        <activity android:name=".AccountRecoveryActivity"/>
+        <activity android:name=".MainActivity" android:theme="@style/Theme.Main"/>
+        <activity android:name=".SignUpActivity"/>
+        <activity android:name=".SignInActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+        <!-- CRUD de producto -->
+
+         <activity android:name=".EditActivity"
             android:theme="@style/Theme.FormActivity"/>
         <activity
             android:name=".VideogameDetail"
@@ -32,8 +42,8 @@
             android:name=".AddActivity"
             android:theme="@style/Theme.FormActivity" />
         <activity
-            android:name=".MainActivity"
-            android:theme="@style/Theme.MainActivity"
+            android:name=".MainProducto"
+            android:theme="@style/Theme.MainProducto"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

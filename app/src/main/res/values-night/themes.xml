@@ -25,8 +25,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-
-
+    <!-- Main Producto CRUD -->
     <style name="Theme.FormActivity" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimaryDark">@color/purple_500</item>
