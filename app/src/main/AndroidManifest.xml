@@ -15,6 +15,7 @@
         android:theme="@style/Theme.AppCompat"
         tools:targetApi="31">
 
+        <!-- Login-->
 
         <activity android:name=".DeleteAccountActivity"/>
         <activity android:name=".UpdatePasswordActivity"/>
@@ -28,6 +29,23 @@
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+
+
+        <!-- Menu-->
+
+        <activity
+            android:name=".MainMenu"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
 
 
@@ -50,6 +68,9 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+
+
     </application>
 
 </manifest>
