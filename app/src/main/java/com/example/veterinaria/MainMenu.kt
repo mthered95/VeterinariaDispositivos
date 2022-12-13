@@ -30,7 +30,7 @@ class MainMenu : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.action_expediente ->  {
-                val intent = Intent(this, MainProducto::class.java)
+                val intent = Intent(this, MainExpediente::class.java)
                 startActivity(intent)
             }
             R.id.action_producto -> {

@@ -79,7 +79,25 @@
 
         <!-- CRUD de Expediente -->
 
+        <activity
+            android:name=".EditActivityExpediente"
+            android:theme="@style/Theme.FormActivity" />
+        <activity
+            android:name=".ExpedienteDetail"
+            android:theme="@style/Theme.DetailActivity" />
+        <activity
+            android:name=".AddActivityExpediente"
+            android:theme="@style/Theme.FormActivity" />
+        <activity
+            android:name=".MainExpediente"
+            android:exported="true"
+            android:theme="@style/Theme.MainProducto" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <!-- Contactenos -->
 

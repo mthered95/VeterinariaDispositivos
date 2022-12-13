@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.videogame_content.view.*
+import kotlinx.android.synthetic.main.expediente_content.view.*
 
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -21,7 +21,7 @@ import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
 import com.google.firebase.database.ktx.getValue
 
-import kotlinx.android.synthetic.main.activity_main2.*
+import kotlinx.android.synthetic.main.activity_main3.*
 
 @Suppress("DEPRECATION")
 class MainExpediente : AppCompatActivity(){
@@ -34,15 +34,15 @@ class MainExpediente : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+        setContentView(R.layout.activity_main3)
 
-        newFloatingActionButton.setOnClickListener { v ->
-            val intent = Intent(this, AddActivity::class.java)
+        newFloatingActionButtonExpediente.setOnClickListener { v ->
+            val intent = Intent(this, AddActivityExpediente::class.java)
             v.context.startActivity(intent)
         }
 
         listExpediente.clear()
-        setupRecyclerView(videogameRecyclerView)
+        setupRecyclerView(expedienteRecyclerView)
 
     }
 
@@ -61,7 +61,7 @@ class MainExpediente : AppCompatActivity(){
                             child.key)
                     expediente?.let { listExpediente.add(it) }
                 }
-                recyclerView.adapter = VideogameViewAdapter(listExpediente)
+                recyclerView.adapter = ExpedienteViewAdapter(listExpediente)
             }
 
             override fun onCancelled(error: DatabaseError) {
@@ -73,12 +73,12 @@ class MainExpediente : AppCompatActivity(){
         deleteSwipe(recyclerView)
     }
 
-    class VideogameViewAdapter(private val values: MutableList<Expediente>) :
-        RecyclerView.Adapter<VideogameViewAdapter.ViewHolder>() {
+    class ExpedienteViewAdapter(private val values: MutableList<Expediente>) :
+        RecyclerView.Adapter<ExpedienteViewAdapter.ViewHolder>() {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             val view = LayoutInflater.from(parent.context)
-                .inflate(R.layout.videogame_content, parent, false)
+                .inflate(R.layout.expediente_content, parent, false)
             return ViewHolder(view)
         }
 
@@ -93,14 +93,14 @@ class MainExpediente : AppCompatActivity(){
             }
 
             holder.itemView.setOnClickListener { v ->
-                val intent = Intent(v.context, VideogameDetail::class.java).apply {
+                val intent = Intent(v.context, ExpedienteDetail::class.java).apply {
                     putExtra("key", expediente.key)
                 }
                 v.context.startActivity(intent)
             }
 
             holder.itemView.setOnLongClickListener{ v ->
-                val intent = Intent(v.context, EditActivity::class.java).apply {
+                val intent = Intent(v.context, EditActivityExpediente::class.java).apply {
                     putExtra("key", expediente.key)
                 }
                 v.context.startActivity(intent)
