@@ -59,12 +59,13 @@
 
     <!--Contactenos-->
 
-    <string name="contact_title">Contactenos</string>
+    <string name="contact_title">Contáctenos</string>
     <string name="msg_phone_call">Realizar llamada telefónica</string>
     <string name="msg_whatsapp_send">Enviar mensaje WhatsApp</string>
     <string name="msg_web_view">Abrir sitio Web</string>
     <string name="msg_saludos">Saludos amigos</string>
     <string name="msg_mensaje_correo">Le escribo este correo para</string>
     <string name="msg_data">faltan datos</string>
+    <string name="title_activity_maps">MapsActivity</string>
 
 </resources>

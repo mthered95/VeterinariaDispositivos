@@ -42,7 +42,7 @@ class MainMenu : AppCompatActivity() {
                 startActivity(intent)
             }
             R.id.action_contacto ->  {
-                val intent = Intent(this, MainActivityGoogleMaps::class.java)
+                val intent = Intent(this, MainContactenos::class.java)
                 startActivity(intent)
             }
             R.id.action_cerrar_sesion -> {
