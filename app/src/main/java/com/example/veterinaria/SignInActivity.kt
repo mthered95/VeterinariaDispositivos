@@ -78,7 +78,7 @@ class SignInActivity : AppCompatActivity() {
     }
 
     private fun reload() {
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, MainMenu::class.java)
         this.startActivity(intent)
     }
 }

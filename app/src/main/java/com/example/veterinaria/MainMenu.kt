@@ -6,11 +6,20 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import com.example.veterinaria.databinding.ActivityMainBinding
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class MainMenu : AppCompatActivity() {
+
+    private lateinit var auth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main_menu)
+
+        auth = Firebase.auth
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -20,11 +29,20 @@ class MainMenu : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.action_profile ->  {
-                val intent = Intent(this, VideogameDetail::class.java)
+            R.id.action_expediente ->  {
+                val intent = Intent(this, MainProducto::class.java)
                 startActivity(intent)
             }
-            R.id.action_exit -> Toast.makeText(this, "Salir", Toast.LENGTH_SHORT).show()
+            R.id.action_producto -> Toast.makeText(this, "Salir", Toast.LENGTH_SHORT).show()
+            R.id.action_perfil ->  {
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.action_cerrar_sesion -> {
+                auth.signOut()
+                val intent = Intent(this, SignInActivity::class.java)
+                this.startActivity(intent)
+            }
 
         }
             return super.onOptionsItemSelected(item)

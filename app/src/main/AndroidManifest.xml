@@ -31,7 +31,6 @@
             </intent-filter>
         </activity>
 
-
         <!-- Menu-->
 
         <activity
@@ -47,7 +46,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
 
         <!-- CRUD de producto -->
 
@@ -68,8 +66,6 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
-
 
     </application>
 

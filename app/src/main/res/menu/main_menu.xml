@@ -3,13 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/action_profile"
+        android:id="@+id/action_expediente"
+        android:title="Expediente"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_producto"
         android:title="Producto"
         app:showAsAction="never"/>
 
     <item
-        android:id="@+id/action_exit"
-        android:title="Salir"
+        android:id="@+id/action_perfil"
+        android:title="Perfil"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_cerrar_sesion"
+        android:title="Cerrar Sesión"
         app:showAsAction="never"/>
 
 </menu>
