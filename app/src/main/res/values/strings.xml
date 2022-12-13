@@ -32,7 +32,7 @@
     <string name="delete">Eliminar</string>
 
 
-
+    <!--Producto #2-->
     <string name="name2">Productos</string>
     <string name="title_activity_main">Productos</string>
     <string name="title_activity_add">Nuevo producto</string>
@@ -43,5 +43,28 @@
     <string name="description_form">Descripción</string>
     <string name="save">Guardar</string>
     <string name="description">Desarrollada por el grupo Dispositivos mobiles</string>
+
+    <!--Expediente #3-->
+
+    <string name="name3">Expediente</string>
+    <string name="title_activity_main3">Expedientes</string>
+    <string name="title_activity_add3">Nuevo expediente</string>
+    <string name="title_activity_edit3">Datos del expediente</string>
+    <string name="name_form3">Nombre</string>
+    <string name="date_form3">Categoría</string>
+    <string name="url_form3">Url imagen</string>
+    <string name="description_form3">Descripción</string>
+    <string name="save3">Guardar</string>
+    <string name="description3">Desarrollada por el grupo Dispositivos mobiles</string>
+
+    <!--Contactenos-->
+
+    <string name="contact_title">Contactenos</string>
+    <string name="msg_phone_call">Realizar llamada telefónica</string>
+    <string name="msg_whatsapp_send">Enviar mensaje WhatsApp</string>
+    <string name="msg_web_view">Abrir sitio Web</string>
+    <string name="msg_saludos">Saludos amigos</string>
+    <string name="msg_mensaje_correo">Le escribo este correo para</string>
+    <string name="msg_data">faltan datos</string>
 
 </resources>

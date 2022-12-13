@@ -33,9 +33,16 @@ class MainMenu : AppCompatActivity() {
                 val intent = Intent(this, MainProducto::class.java)
                 startActivity(intent)
             }
-            R.id.action_producto -> Toast.makeText(this, "Salir", Toast.LENGTH_SHORT).show()
+            R.id.action_producto -> {
+                val intent = Intent(this, MainProducto::class.java)
+                startActivity(intent)
+            }
             R.id.action_perfil ->  {
                 val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.action_contacto ->  {
+                val intent = Intent(this, MainActivityGoogleMaps::class.java)
                 startActivity(intent)
             }
             R.id.action_cerrar_sesion -> {
