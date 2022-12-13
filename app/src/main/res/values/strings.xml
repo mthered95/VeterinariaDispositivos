@@ -1,16 +1,16 @@
 <resources>
     <string name="app_name">Veterinaria</string>
-    <string name="title_active_login">Iniciar sesión</string>
+    <string name="title_active_login">Iniciar Sesión</string>
     <string name="password">Contraseña</string>
     <string name="new_password">Nueva contraseña</string>
     <string name="current_password">Contraseña actual</string>
     <string name="name">Nombre completo</string>
     <string name="email">Email</string>
-    <string name="login">Login</string>
+    <string name="login">Iniciar Sesión</string>
     <string name="repeat_password">Confirma la contraseña</string>
-    <string name="signup">Sign Up</string>
+    <string name="signup">Iniciar Sesión</string>
     <string name="text_signup">No tienes cuenta?</string>
-    <string name="link_signup">Sin up</string>
+    <string name="link_signup">Registrarse</string>
     <string name="all">TODO</string>
     <string name="user_email">userdefault@gmail.com</string>
     <string name="user_name">User Default</string>
@@ -48,10 +48,10 @@
 
     <string name="name3">Expediente</string>
     <string name="title_activity_main3">Expedientes</string>
-    <string name="title_activity_add3">Nuevo expediente</string>
+    <string name="title_activity_add3">Expediente Nuevo</string>
     <string name="title_activity_edit3">Datos del expediente</string>
     <string name="name_form3">Nombre</string>
-    <string name="date_form3">Categoría</string>
+    <string name="date_form3">Raza</string>
     <string name="url_form3">Url imagen</string>
     <string name="description_form3">Descripción</string>
     <string name="save3">Guardar</string>

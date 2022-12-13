@@ -91,10 +91,10 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
-                android:autofillHints="@string/date_form"
+                android:autofillHints="@string/date_form3"
                 android:background="@drawable/ic_field"
                 android:ems="3"
-                android:hint="@string/date_form"
+                android:hint="@string/date_form3"
                 android:inputType="date|text"
                 android:paddingLeft="16dp"
                 android:paddingTop="8dp"
@@ -112,7 +112,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="8dp"
-                android:text="@string/date_form"
+                android:text="@string/date_form3"
                 android:textColor="@color/text_dark"
                 android:textSize="18sp" />
 

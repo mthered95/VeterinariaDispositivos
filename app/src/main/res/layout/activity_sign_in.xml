@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/title_active_login"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="24sp" />
     </LinearLayout>
 
@@ -99,7 +99,8 @@
             android:paddingLeft="64dp"
             android:paddingRight="64dp"
             android:text="@string/login"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
     <LinearLayout
@@ -129,7 +130,7 @@
             android:layout_marginRight="16dp"
             android:layout_weight="0"
             android:text="@string/link_signup"
-            android:textColor="#ff9900"
+            android:textColor="@color/material_dynamic_primary40"
             android:textSize="24sp" />
     </LinearLayout>
 
