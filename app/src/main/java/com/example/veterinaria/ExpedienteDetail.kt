@@ -11,7 +11,10 @@ import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_add.descriptionTextView
 import kotlinx.android.synthetic.main.activity_add.nameTextView
+import kotlinx.android.synthetic.main.activity_expediente_detail.*
 import kotlinx.android.synthetic.main.activity_videogame_detail.*
+import kotlinx.android.synthetic.main.activity_videogame_detail.backgroundImageView
+import kotlinx.android.synthetic.main.activity_videogame_detail.posterImgeView
 
 class ExpedienteDetail : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,7 +31,7 @@ class ExpedienteDetail : AppCompatActivity() {
                 val expediente:Expediente? = dataSnapshot.getValue(Expediente::class.java)
                 if (expediente != null) {
                     nameTextView.text = expediente.name.toString()
-                    //descriptionTextView.text = videogame.description.toString()
+                    descriptionTextView1.text = expediente.description.toString()
                     images(expediente.url.toString())
                 }
             }

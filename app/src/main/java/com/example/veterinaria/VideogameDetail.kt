@@ -28,7 +28,7 @@ class VideogameDetail : AppCompatActivity() {
                 val videogame:Videogame? = dataSnapshot.getValue(Videogame::class.java)
                 if (videogame != null) {
                     nameTextView.text = videogame.name.toString()
-                    //descriptionTextView.text = videogame.description.toString()
+                    descriptionTextView.text = videogame.description.toString()
                     images(videogame.url.toString())
                 }
             }
