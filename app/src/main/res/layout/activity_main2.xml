@@ -86,5 +86,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/videogameRecyclerView"
         app:srcCompat="@drawable/ic_plus"
-        tools:ignore="VectorDrawableCompat" />
+        tools:ignore="VectorDrawableCompat,DuplicateSpeakableTextCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
